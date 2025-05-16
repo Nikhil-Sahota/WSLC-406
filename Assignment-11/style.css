@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+
+}
+.HeadNav{
+    width: 100%;
+
+}
+.nav{
+    width: 85%;
+    margin: auto;
+    display: flex;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+      padding-left: 15px;
+      padding-top: 10px;
+      box-sizing: border-box;
+}
+.navbar ul li{
+    padding: 30px 10px;
+    font-family: sans-serif;
+    color: #4e4e4e;
+    font-weight: 500;
+    font-size: 17px;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+.btns{
+    padding: 20px;
+}
+.btns button{
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    color: #4E4E4E;
+    font-size: 16px;
+    margin-left: 8px;
+}
+.btns .one {
+    background-color: white;
+    border: 1px solid lightgrey;
+}
+.one:hover{
+    background-color: #2699FB;
+    color: white;
+}
+.btns .two {
+    background-color: #2699FB;
+    color: white;
+    border: 1px solid lightgrey;
+}
+.two:hover{
+    background-color: white;
+     color: #4E4E4E;
+}
+.logo{
+    width: 160px;
+    padding-top: 11px;
+    box-sizing: border-box;
+}
+.row {
+    background-image: url(img/spotlight-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.section_header {
+    width: 1300px;
+    margin: auto;
+
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.number h1 {
+    font-size: 44px;
+    display: inline;
+    background-image: url('img/spotlight-heading-bg.svg');
+    background-repeat: no-repeat;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    background-position: bottom right;
+}
+
+.number p {
+    padding-top: 15px;
+    font-size: 18px;
+}
+.contentImg{
+    width: 100%;
+    margin: auto;
+}
+.contant {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 90px;
+
+}
+
+.text h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.text h2:hover {
+    color: #FFD700;
+}
+
+.text p {
+    padding-top: 6px;
+    color: #9CB2C5;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.text {
+    flex-basis: 25%;
+    box-sizing: border-box;
+}
+
+.border {
+    border-right: 1px solid #0B2F4F;
+}
+
+.section_content {
+    width: 100%;
+    display: flex;
+    padding-top: 70px;
+    background-color: #F8F9FD;
+}
+
+.left {
+    width: 48%;
+    padding-left: 15px;
+}
+
+.left h2 {
+    font-size: 36px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.left p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(67, 80, 91);
+    margin: 40px 0;
+
+}
+
+.cards {
+    padding-bottom: 140px;
+}
+
+.card {
+    margin-bottom: 16px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 1px 2px #D0D5DD;
+}
+
+.card h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #43505B;
+    margin: 15px 0;
+}
+
+.card a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2699FB;
+    text-decoration: none
+}
+.card a:hover{
+    color: blueviolet;
+}
+.card span:hover{
+    color: blueviolet;
+}
+.card span {
+    font-size: 20px;
+    color: #2699FB;
+
+}
+
+.cards button {
+    color: white;
+    background: #2699FB;
+    border: 1px solid transparent;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+.cards button:hover{
+    background-color: lightblue;
+    color: #2699FB;
+    border: 1px solid #2699FB;
+}
+
+.right {
+    width: 48%;
+    padding-left: 15px;
+
+    background-image: url(img/iq-circle.webp), url(img/iq-dot-bg.webp);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 93% 79%, 8% 12.5%;
+}
+.img_right{
+    width: 500px;
+    margin: 150px auto;
+}
