@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Button Hover Shrink Center</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+  }
+  .scale {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px auto;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  .scaleimg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .scaleimg img.sc1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .sch {
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: #2e2e2d;
+    font-size: 28px;
+    z-index: 20;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  }
+  .scbtn {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    padding: 7px 20px;
+    color: white;
+    background-color: #B78723;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 30;
+    border-radius: 4px;
+    position: relative; /* important for ::after */
+    transition: color 0.4s ease, border 0.4s ease;
+  }
+  .scbtn.sscc::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #B78723;
+    transform: scaleX(1);
+    transform-origin: center center; /* changed to center */
+    transition: transform 0.4s ease;
+    z-index: -1; /* behind the button text */
+    border-radius: 4px;
+  }
+  .scbtn:hover {
+    border: 1px solid #B78723;
+    color: #B78723;
+    background-color: transparent;
+  }
+  .scbtn:hover.sscc::after {
+    transform: scaleX(0);
+  }
+</style>
+</head>
+<body>
+<div class="scale">
+  <div class="scaleimg">
+    <img src="images/11.jpg" alt="Nehru Jacket" class="sc1" />
+    <h2 class="sch">Nehru Jacket</h2>
+    <button class="scbtn sscc">Shop Now</button>
+  </div>
+</div>
+</body>
+</html>
+
