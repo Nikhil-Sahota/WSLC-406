@@ -1,0 +1,70 @@
+/* Basic page style */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Loader container */
+.loader {
+  position: relative;
+}
+
+/* Cube animation */
+.cube {
+  width: 100px;
+  height: 100px;
+  background: #777;
+  
+  animation: rotateCube 2s infinite ease-in-out;
+  transform-origin: center;
+}
+
+/* Cube shadow underneath */
+.shadow {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  top: 130px;
+  margin: auto;
+  width: 100px;
+  height: 8px;
+  background: #b0a5a5;
+  border-radius: 50%;
+  animation: shadowScale 1s infinite linear;
+}
+
+/* Cube spin */
+@keyframes rotateCube {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(190deg) scale(1);
+     top: 100px;
+  }
+ 
+  100% {
+    transform: rotate(360deg) scale(1);
+      border-bottom-right-radius: 3px;
+    
+}
+
+  }
+}
+
+/* Shadow shrink/grow */
+@keyframes shadowScale {
+  0%, 100% {
+    transform: scaleX(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scaleX(1.4);
+    opacity: 0.2;
+  }
+}
