@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Leap Year Checker</title>
+        <link rel="icon" href="img/favicon.png" type="image/png">
+    </head>
+    <body>
+        <script>
+        var year = parseInt(prompt("Enter a year:(Ex:1900,2000,2024,2025)"));
+     
+        if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+            document.write(year + " is a <strong>Leap Year</strong>.");
+        } else {
+            document.write(year + " is <strong>NOT a Leap Year</strong>.");
+        }
+    </script>
+    </body>
+</html>

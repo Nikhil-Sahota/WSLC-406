@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Age Classifier</title>
+        <link rel="icon" href="img/favicon.png" type="image/png">
+    </head>
+    <body>
+        <script>
+        var age = parseInt(prompt("Enter the person's age:"));
+
+        if (age >= 0 && age <= 2) {
+            document.write("This person is an <strong>Infant</strong>.");
+        } else if (age >= 3 && age <= 5) {
+            document.write("This person is a <strong>Toddler</strong>.");
+        } else if (age >= 6 && age <= 12) {
+            document.write("This person is a <strong>Child</strong>.");
+        } else if (age >= 13 && age <= 17) {
+            document.write("This person is a <strong>Teenager</strong>.");
+        } else if (age >= 18) {
+            document.write("This person is an <strong>Adult</strong>.");
+        } else {
+            document.write("Invalid age entered.");
+        }
+    </script>
+    </body>
+</html>

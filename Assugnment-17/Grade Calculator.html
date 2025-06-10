@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Grade Calculater</title>
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <script>
+            var marks = prompt('Enter the marks - ');
+
+            if(marks >= 90 && marks <= 100){
+                document.write('Grade - A (First Position)');
+            } else if(marks >= 80 && marks <= 89){
+                document.write('Grade - B (Pass)');
+            } else if(marks >= 70 && marks <= 79){
+                document.write('Grade - C (Pass)');
+            }  else if(marks >= 60 && marks <= 69){
+                document.write('Grade - D (Pass)');
+            } else if(marks < 60){
+                document.write('Grade - E');
+            } else {
+                document.write('Invaild Value');
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

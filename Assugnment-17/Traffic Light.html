@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Traffic Light Simulator</title>
+        <link rel="icon" href="img/favicon.png" type="image/png">
+    </head>
+    <body>
+        <script>
+        var color = prompt("Enter the traffic light color (Red, Yellow, Green):");
+
+        if (color.toLowerCase() === 'red') {
+            document.write("<strong>STOP! </strong> The light is red.");
+        } else if (color.toLowerCase() === 'yellow') {
+            document.write("<strong>WAIT! </strong> The light is yellow.");
+        } else if (color.toLowerCase() === 'green') {
+            document.write("<strong>GO! </strong> The light is green.");
+        } else {
+            document.write("Invalid input. Please enter Red, Yellow, or Green.");
+        }
+    </script>
+    </body>
+</html>

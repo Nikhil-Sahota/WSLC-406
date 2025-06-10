@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Temparature Converter</title>
+        <link rel="icon" href="img/favicon.png" type="image/png">
+    </head>
+    <body>
+        <script>
+        var from = prompt('Enter the from value (eg - Kelvin, Fahrenheit, Celsius)');
+        var to = prompt('Enter the to value (eg - Kelvin, Fahrenheit, Celsius)');
+        var number = parseInt(prompt('Enter the number'));
+
+        if(from.toLowerCase() == 'kelvin' && to.toUpperCase() == 'FAHRENHEIT'){
+            var formula = (number - 273.15) * 9/5 + 32;
+
+            document.write(formula+ ' fahrenheit');
+               } else if(from.toLowerCase() == 'fahrenheit' && to.toUpperCase() == 'KELVIN'){
+            var formula = (number -32) * 5/9 + 273.15;
+
+            document.write(formula+ ' kelvin');
+              } else if(from.toLowerCase() == 'celsius' && to.toUpperCase() == 'FAHRENHEIT'){
+            var formula = (number * 9/5) + 32;
+
+            document.write(formula+ ' fahrenheit');
+             } else if(from.toLowerCase() == 'celsius' && to.toUpperCase() == 'KELVIN'){
+            var formula = (number + 273.15);
+
+            document.write(formula+ ' kelvin');
+                } else if(from.toLowerCase() == 'kelvin' && to.toUpperCase() == 'CELSIUS'){
+            var formula = (number - 273.15);
+
+            document.write(formula+' Calsius');
+               } else if(from.toLowerCase() == 'fahrenheit' && to.toUpperCase() == 'CELSIUS'){
+            var formula = (number - 32)* 5/9;
+
+            document.write(formula+' Calsius');
+        } else {
+            document.write('Invalid Value');
+        }
+    </script>
+    </body>
+</html>
