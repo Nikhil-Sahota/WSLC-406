@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prime Number Checker</title>
+        <link rel="icon" href="img/favicon.png" type="image/png">
+    </head>
+    <body>
+
+        <script>
+
+   var NNumber = prompt ('Enter the Number');
+   var isPrime =1;
+   for ( i=2; i<NNumber; i++){
+    if(NNumber % i ==0){
+        isPrime =0;
+    }
+   }
+   if(isPrime==1){
+    document.write('Prime Number');
+   }else {
+    document.write('Not a Prime Number');
+   }
+
+    </script>
+    </body>
+</html>
