@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First non-repeated char</title>
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+
+        <script>
+            var str = "hello world";
+            document.write(str);
+            function firstNonRepeatedChar(str) {
+            for (let i = 0; i < str.length; i++) {
+                  if (str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
+                         return str[i];
+            }
+         }
+              return null; // if all characters are repeated
+    }
+
+                  let result = firstNonRepeatedChar(str);
+                    console.log(result); // Output: "h"
+
+
+
+   </script>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>1,3,4 Task</title>
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <style>
+    button{
+        padding: 7px 15px;
+        border-radius: 5px;
+        background: linear-gradient(93.77deg, #0ACEFE -6.36%, #2699FB 50.16%);
+        border: 1px solid #0ACEFE;
+        color: #ffffff;
+        margin: 20px 0px 0px 30px;
+    }
+  </style>
+    </head>
+    <body>
+
+        <button onclick="reverseValue()">Reverse</button>
+
+        <button onclick="smallestValue()">Smallest</button>
+
+        <button onclick="largestValue()">Largest</button>
+
+        <script>
+
+        let numbers = [11,22,33,44,55,8,99,88,77,66];
+        
+        function reverseValue(){
+            var output = [];
+
+            for(value of numbers){
+                output.unshift(value);
+            }
+            console.log(output);
+           }
+
+       
+           function smallestValue(){
+            var output = numbers[0];
+
+            for(value of numbers){
+                if(value < output){
+                    output = value;
+                }
+            }
+           console.log(output);
+        }
+
+       
+        function largestValue(){
+            var output = numbers[0];
+
+            for(value of numbers){
+                if(value > output){
+                    output = value;
+                }
+            }
+           console.log(output);
+            }
+
+    </script>
+    </body>
+</html>

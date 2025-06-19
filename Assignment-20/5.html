@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>5 Task</title>
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+
+        <script>
+
+             const indianNames = [
+              "Arjun", "Vinita", "Ravi", "Nisha", "Ishan", "Priya", "Veer",
+               "Siddharth", "Anika", "Karan", "Ayesha", "Rahul", "Uma", "Vikram",
+                "Neha", "Deepak", "Kavita", "Aditya", "Divya", "Rohan"];
+
+            const result = indianNames.filter(name => {
+            const firstChar = name[0].toLowerCase(); // get first character, lowercase
+            const isVowel = ['a', 'e', 'i', 'o', 'u'].includes(firstChar);
+            return isVowel && name.length > 5;});
+
+                 console.log(result);
+
+
+
+        </script>
+    </body>
+</html>
