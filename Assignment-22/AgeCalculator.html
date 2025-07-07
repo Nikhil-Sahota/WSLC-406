@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+  </head>
+  <body>
+    <div class="container">
+      <h2>Age Calculator</h2>
+      <input type="date" id="birthDate">
+      <input type="time" id="birthTime">
+      <br>
+      <button onclick="calculateAge()">Calculate Age</button>
+
+      <div class="result">
+        <label>Years:</label>
+        <input type="text" id="years" readonly>
+        <label>Months:</label>
+        <input type="text" id="months" readonly>
+        <label>Days:</label>
+        <input type="text" id="days" readonly>
+        <label>Hours:</label>
+        <input type="text" id="hours" readonly>
+        <label>Minutes:</label>
+        <input type="text" id="minutes" readonly>
+        <label>Seconds:</label>
+        <input type="text" id="seconds" readonly>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
